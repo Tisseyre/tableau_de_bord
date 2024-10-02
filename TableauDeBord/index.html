@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/uikit/uikit.min.js"></script>
+    <script src="js/uikit/uikit-icons.min.js"></script>
+    <script type="text/javascript" src="js/global_variables.js"></script>
+    <script type="text/javascript" src="js/classes/state.js"></script>
+    <script type="text/javascript" src="js/classes/material.js"></script>
+    <script type="text/javascript" src="js/classes/request.js"></script>
+    <script type="text/javascript" src="js/classes/dashboard.js"></script>
+    <script type="text/javascript" src="js/classes/popup_index.js"></script>
+    <script type="text/javascript" src="js/session.js"></script>
+    <script defer type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="data/references.js"></script>
+</head>
+
+<body>
+    <div id="title-box" class="uk-flex uk-position-absolute">
+        <div class="div-index uk-flex">
+            <div class="titre-index">
+                <h1 class="uk-flex-1 uk-margin-remove-top">Aide à l'identification des<br>anomalies environnementales</h1>
+            </div>
+            <div class="uk-flex uk-height-1-1 mode-emploi-index">
+                <p>Première utilisation ?<br /> Lire le <a href="#" target="_blank">Mode d'emploi</a> !</p>
+                <img src="img/arrow-right.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="uk-container uk-container-large">
+        <div class="uk-flex uk-flex-right uk-margin-medium-top">
+            <div class="maj-bouton-index uk-margin-large-bottom">
+                <p>Date de la mise à jour : <span id="majDateDemande"></span></p>
+                <div class="uk-flex uk-flex-right">
+                    <button class="uk-button uk-button-default uk-border-rounded"
+                        onclick="removeSessionStorageItems()">Changer de table</button>
+                </div>
+            </div>
+        </div>        
+
+        <table class="uk-table uk-table-divider uk-margin-large-top">
+            <thead>
+                <tr class="uk-background-primary">
+                    <th class="uk-table-expand"><strong>Matériel</strong></th>
+                    <th class="uk-table-expand"><strong>Nombre de demandes</strong></th>
+                    <th class="uk-table-expand"><strong>Urgent</strong></th>
+                    <th class="uk-table-expand"><strong>Moyen terme</strong></th>
+                    <th class="uk-table-expand"><strong>Long terme</strong></th>
+                    <th class="uk-table-expand"><strong>Lien</strong></th>
+                </tr>
+            </thead>
+            <tbody id="tbody-data"></tbody>
+        </table>
+    </div>
+
+    <div id="popup-table"></div>
+
+    <div id="popup-modal" class="popup-modal">
+        <div class="uk-position-relative uk-position-center popup-content">
+            <div id="step-2" class="popup-step uk-card uk-card-default uk-card-body uk-border-rounded">
+                <h3 class="uk-card-title uk-text-bold">Sélectionner la demande de travaux</h3>
+                <input type="file" id="requestInput" accept=".csv" style="display:none;" />
+                <span id="requestTableName"></span>
+                <div class="uk-flex uk-flex-center uk-margin-large-top">
+                    <button id="requestSelect"
+                        class="uk-button uk-button-primary uk-margin-right uk-border-rounded">Parcourir...</button>
+                    <button id="popup-submit"
+                        class="next-button uk-button uk-button-primary uk-margin-left uk-border-rounded"
+                        disabled>Démarrer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="uk-margin-large-top">
+        <div class="uk-flex uk-flex-around">
+            <div class="uk-flex uk-flex-middle">
+                <span class="uk-text-small">Développé&nbsp;par </span>
+            </div>
+            <div class="">Vous êtes administrateur ? <br/>Lire le <a href="#" target="_blank" class="uk-text-bold">Mode d'emploi administrateur</a> !</div>
+        </div>
+    </footer>
+</body>
+
+</html>

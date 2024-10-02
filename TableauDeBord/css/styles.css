@@ -1,0 +1,248 @@
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../Work_Sans/WorkSans-VariableFont_wght.ttf');
+}
+
+/* Couleurs */
+:root {
+    --orange-fonce-EDF: #FE5716;
+    --orange-moyen-EDF: #FF861D; /* utilisé pour P3 */
+    --orange-clair-EDF: #FFB210;
+    --bleu-fonce-EDF: #001A70;
+    --bleu-moyen-EDF: #1057C8;
+    --bleu-clair-EDF: #1089FF;
+
+    --rouge-P1-P2: #ED0000;
+    --jaune-P4: #FFCC00;
+    --bleu-clair-fond: #F5F7FA;
+
+    --eipr : #FBF8FF;
+}
+
+* {
+    font-family: 'Work Sans', 'Segoe UI', Arial, sans-serif;
+}
+
+/*
+p{
+    font-family: 'Work Sans', Arial, sans-serif;
+}
+*/
+
+/* Styles pour le popup modal */
+.popup-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #00061c99; 
+}
+
+.popup-step {
+    padding-top: 30px;
+}
+
+th {
+    color: #fff !important;
+}
+
+.uk-button-default {
+    background-color: var(--bleu-clair-fond);
+    color: var(--bleu-fonce-EDF);
+    border: none;
+}
+
+.uk-button-default:hover {
+    background-color: #E6F3FF;
+    color: var(--bleu-fonce-EDF);
+}
+
+.uk-button-secondary {
+    background-color: #9b47f5;
+}
+
+.uk-button-secondary:hover {
+    background-color: #7434b8;
+}
+
+.uk-card-default {
+    background-color: var(--bleu-clair-fond);
+}
+
+.mode-emploi {
+    padding: 10px 20px;
+    margin: auto 0;
+    box-shadow: #eaeaea 0 0 4px 2px;
+}
+
+.card-popup {
+    padding: 20px 20px 30px 20px;
+    box-shadow: #eaeaea 0 0 4px 2px;
+}
+
+.badge {
+    padding: 8px 15px;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.table-text {
+    padding: 8px 0px;
+}
+
+.urgent-badge {
+    background-color: var(--rouge-P1-P2);
+    transition: 0.15s ease-in;
+}
+.info-badge .urgent-badge:hover {
+    background: linear-gradient(160deg, rgba(246,0,0,1) 0%, rgb(200, 0, 0) 100%); 
+}
+
+.mid-badge {
+    background-color: var(--orange-moyen-EDF);
+    transition: 0.15s ease-in;
+}
+
+.info-badge .mid-badge:hover {
+    background: linear-gradient(160deg, rgba(255,134,29,1) 0%, rgba(238,76,13,1) 100%); 
+}
+
+.low-badge {
+    background-color: var(--jaune-P4);
+    color: #343434;
+    transition: 0.15s ease-in;
+}
+
+.info-badge .low-badge:hover {
+    background: linear-gradient(160deg, rgba(255,204,0,1) 0%, rgb(221, 180, 15) 100%); 
+}
+
+.info-badge .badge {
+    cursor: pointer;
+}
+
+.info-badge:has(.badge:hover):after {
+    opacity: 1;
+    z-index: 1;
+    transition: opacity 0.1s ease-in;
+}
+
+.info-badge:has(.badge):after {
+    content: 'Cliquer pour afficher les informations complémentaires.';
+    opacity: 0;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: -5px;
+    padding: 10px;
+    background-color: var(--bleu-clair-fond);
+    font-size: small;
+    color: var(--bleu-fonce-EDF);
+    border-radius: 10px;
+    border: 1px solid #E5E5E5;
+    z-index: -1;
+    transition: opacity 0.1s ease-in;
+}
+
+.uk-position-absolute.uk-position-top-left.badge {
+    border-radius: 0 !important;
+    padding: 8px 20px;
+    font-size: 24px;
+}
+
+.padding-top{
+    padding-top: 8px;
+}
+
+.popup-title{
+    color: var(--bleu-fonce-EDF);
+    padding-top: 30px;
+}
+
+.margin-large-right{
+    margin-right: 150px;
+}
+
+/* Style Index */
+.div-index {
+    justify-content: space-between;
+    position: relative;
+}
+
+@media only screen and (max-width: 1420px) {
+    #title-box {
+        position: relative !important;
+    }
+}
+
+
+
+.div-index,
+.uk-margin-top {
+    margin-top: 0px !important;
+    align-items: center;
+}
+
+.titre-index {
+    background-color: var(--bleu-fonce-EDF);
+    padding: 30px 40px;
+}
+
+footer {
+    background-color: var(--bleu-clair-fond);
+    color: var(--bleu-fonce-EDF);
+    padding: 30px 40px;
+}
+
+footer a {
+    color: var(--bleu-fonce-EDF);
+    text-decoration: underline;
+}
+
+.mode-emploi-index {
+    padding: 33.5px 40px;
+    background-color: var(--bleu-moyen-EDF);
+    align-items: center;
+    color: white;
+}
+
+.mode-emploi-index a{
+    color: white;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.mode-emploi-index a:hover{
+    color: var(--bleu-clair-fond);
+}
+
+.mode-emploi-index img{
+    height: 100px;
+    padding-left: 40px;
+}
+
+.maj-bouton-index{
+    align-items: center;
+}
+
+.maj-bouton-index p{
+   text-align: end;
+}
+
+.schemaTitle {
+    padding: 20px 20px;
+}
+
+#svg-schema {
+    width: 75%;
+    margin: -65px auto 0 auto;
+}
+
+P.uk-light {
+    font-size: 18px;
+    color: rgba(255,255,255,.9);
+}

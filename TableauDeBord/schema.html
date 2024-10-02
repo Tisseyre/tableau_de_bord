@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/uikit/uikit.min.js"></script>
+    <script src="js/uikit/uikit-icons.min.js"></script>
+    <script type="text/javascript" src="js/global_variables.js"></script>
+    <script type="text/javascript" src="js/classes/state.js"></script>
+    <script type="text/javascript" src="js/classes/material.js"></script>
+    <script type="text/javascript" src="js/classes/request.js"></script>
+    <script type="text/javascript" src="js/classes/dashboard.js"></script>
+    <script type="text/javascript" src="js/classes/popup.js"></script>
+    <script type="text/javascript" src="js/session.js"></script>
+    <script defer type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="data/references.js"></script>
+</head>
+
+<body>  
+  <div class="div-index uk-flex uk-margin-bottom">
+    <div class="titre-index">
+      <h1 id="title-schema" class="uk-margin-remove-top uk-margin-small-bottom margin-large-right">Tableau de bord</h1>
+    </div>
+  </div>
+    <a href="index.html" class="uk-button"><span uk-icon="icon: chevron-left; ratio: 2"></span> Retour</a>
+    <div class="uk-container uk-container-large">
+        <div id="svg-schema">
+          <?xml version="1.0" encoding="UTF-8"?>
+        </div>
+        <div id="dashboard">
+            <table id="table-data" class="uk-table uk-table-middle uk-table-divider">
+                <thead>
+                    <tr class="uk-background-primary">
+                        <th><strong>Référence</strong></th>
+                        <th class="uk-width-1-4"><strong>Libellé</strong></th>
+                        <th><strong>Priorité</strong></th>
+                        <th class="uk-table-expand"><strong>Commentaires</strong></th>
+                        <th><strong>Lien</strong></th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-data"></tbody>
+            </table>
+        </div>
+    </div>
+    <a href="index.html" class="uk-button uk-margin-medium-bottom"><span uk-icon="icon: chevron-left; ratio: 2"></span> Retour</a>
+    <div id="popup-schema"></div>
+    
+    <footer class="uk-margin-large-top">
+      <div class="uk-flex uk-flex-around">
+          <div class="uk-flex uk-flex-middle">
+              <span class="uk-text-small">Développé&nbsp;par</span>
+          </div>
+          <div class="">Vous êtes administrateur ? <br/>Lire le <a href="#" target="_blank" class="uk-text-bold">Mode d'emploi administrateur</a> !</div>
+      </div>
+    </footer>
+</body>
+</html>

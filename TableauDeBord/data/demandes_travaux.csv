@@ -1,0 +1,9 @@
+Etat;Numero;;RF;;Priorite;;;Libelle;Description;Statut;;;;;Commentaire Projet;Commentaire Metier;Commentaire Surete;Commentaire Conduite
+A;1;;A002;;2;;;CORROSION;;TRAITÉ;;;;;;;;
+B;2;;;;;;;;;;;;;;Attente;Arrivée du technicien 15/10;;
+A;3;;B005;;3;;;USURE FILTRE;;TRAITÉ;;;;;;;;
+B;4;;;;;;;;;;;;;;;Analyse en cours;;
+A;3;;B007;;4;;;CORROSION;;TRAITÉ;;;;;;;;
+B;4;;;;;;;;;;;;;;;Analyse en cours;;
+A;3;;B008;;3;;;PANNE MATERIEL;;TRAITÉ;;;;;;;;
+B;4;;;;;;;;;;;;;;;Analyse en cours;;
