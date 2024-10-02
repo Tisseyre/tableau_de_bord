@@ -34,7 +34,7 @@ class Popup {
         if (this.svgElement) {
             // if we found the svg element, then get his coordinates and setup a margin
             let coordinates = this.svgElement.getBoundingClientRect();
-            left = coordinates.left + 30;
+            left = coordinates.left + 85;
             top = coordinates.top - 120;
         }
 
@@ -55,7 +55,7 @@ class Popup {
         popupHTML += '<h5 class="uk-text-bold popup-title">'+this.rf+'</h5>';
         /*popupHTML += '<p>Priorité : '+this.priority+'</p>';*/
 
-        popupHTML += '<a href="#" target="_blank" class="uk-button uk-button-primary uk-border-rounded">Voir la requête <span uk-icon="icon: link-external; ratio: 1" class="uk-margin-left"></span></a>';
+        popupHTML += '<a href="#" target="" class="uk-button uk-button-primary uk-border-rounded">Voir la requête <span uk-icon="icon: link-external; ratio: 1" class="uk-margin-left"></span></a>';
         popupHTML += '</div>';
 
         popupSchema.innerHTML += popupHTML;

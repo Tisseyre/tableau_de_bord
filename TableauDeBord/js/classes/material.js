@@ -41,7 +41,7 @@ class Material {
 
     getSvgElement() {
         const svgElement = document.getElementById('svg-schema');
-        let svgMaterialId = "_"+this._rf.substring(4);
+        let svgMaterialId = "_"+this._rf;
 
         if (!svgElement) {
             console.error('Cannot access svg element.');

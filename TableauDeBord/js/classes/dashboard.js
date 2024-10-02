@@ -24,22 +24,16 @@ class Dashboard {
     /**
      * get DT Data of a spectific plan
      * 
-     * @param p_code the 4 first letters from plan code (ex : 0SEH)
+     * @param p_code plan code (ex : A)
      */
     getDataPlan(p_code) {
         let codes = [];
         switch (p_code) {
-            case "0SEH":
-                codes = ["SEH"];
+            case "A":
+                codes = ["A"];
                 break;
-            case "0CTF":
-                codes = ["CTF", "HCM"];
-                break;
-            case "1CTE":
-                    codes = ["1CTE", "2CTE", "1HCE", "2HCE"];
-                    break;
-            case "0CTE":
-                codes = ["0CTE", "0HCE"];
+            case "B":
+                codes = ["B"];
                 break;
             default:
                 break;
@@ -246,8 +240,6 @@ class Dashboard {
                 this.updateSvgItems();
                 this.sort();
 
-                // add header of the table
-                const table = document.getElementById('table-data');
                 // create table
                 this.data.forEach(request => {
                     tbodyHTML += '<tr>';
@@ -278,7 +270,7 @@ class Dashboard {
                     tbodyHTML += '</ul></td>';
                     tbodyHTML += '<td>';
                     if(request.getNum()) {
-                        tbodyHTML += '<a href="#" target="_blank" class="uk-button uk-button-primary uk-border-rounded">Voir la requête <span uk-icon="icon: link-external; ratio: 1" class="uk-margin-left"></span></a>'
+                        tbodyHTML += '<a href="#" target="" class="uk-button uk-button-primary uk-border-rounded">Voir la requête <span uk-icon="icon: link-external; ratio: 1" class="uk-margin-left"></span></a>'
                     }
                     tbodyHTML +='</td></tr>';
                     tbody.innerHTML = tbodyHTML;

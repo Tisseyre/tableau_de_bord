@@ -16,6 +16,14 @@ var jsonData = [
       "LIBELLE": "Element 004"
    },
    {
+      "RF": "A005",
+      "LIBELLE": "Element 005"
+   },
+   {
+      "RF": "A006",
+      "LIBELLE": "Element 006"
+   },
+   {
       "RF": "B005",
       "LIBELLE": "Element 005"
    },

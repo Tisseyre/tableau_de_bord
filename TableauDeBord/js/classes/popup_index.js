@@ -76,7 +76,7 @@ class PopupIndex {
             popupHTML += '</td>';
 
             popupHTML += '<td>';
-            popupHTML += '<a class="uk-button uk-button-primary uk-border-rounded" href="#" target="_blank">Voir la requête <span uk-icon="link-external"></span></a>';
+            popupHTML += '<a class="uk-button uk-button-primary uk-border-rounded" href="#" target="">Voir la requête <span uk-icon="link-external"></span></a>';
             popupHTML += '</td>';
 
             popupHTML += '</tr>';
