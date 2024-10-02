@@ -7,4 +7,5 @@ Les demandes de travaux se matérialisent sous forme de tableaux et de schémas 
 ## Utilisation
 
 1 - Ouvrir le fichier index.html
+
 2 - Sélectionner le fichier data/demandes_travaux.csv à partir de la modale d'importation de fichier
